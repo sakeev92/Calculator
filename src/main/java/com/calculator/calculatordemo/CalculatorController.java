@@ -17,6 +17,7 @@ public class CalculatorController {
         return calculatorService.hello();
     }
 
+
     @GetMapping("plus")
     public String plus(@RequestParam(value="num1", required=false) Integer num1,@RequestParam(value="num2", required=false) Integer num2) {
         if (num1 == null || num2 == null)
